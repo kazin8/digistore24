@@ -1,0 +1,31 @@
+{
+  "name": "kazin8/digistore24",
+  "type": "library",
+  "description": "DigiStore24 API",
+  "keywords": [
+    "DigiStore24",
+    "PHP",
+    "Wrapper"
+  ],
+  "homepage": "https://github.com/kazin8/digistore24",
+  "authors": [
+    {
+      "name": "Christian Neise",
+      "homepage": "https://doc.digistore24.com/api-de/",
+      "role": "Developer"
+    },
+    {
+      "name": "Vladimir Vasyukov",
+      "homepage": "https://github.com/kazin8/",
+      "role": "Adaptation for composer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kazin8\\DigiStore24\\": "src/"
+    }
+  }
+}
