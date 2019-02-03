@@ -1,6 +1,6 @@
 <?php
 
-namespace DigiStore24;
+namespace Kazin8\DigiStore24;
 
 /**
  * Digistore24 REST Api Connector

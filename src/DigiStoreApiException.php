@@ -1,6 +1,6 @@
 <?php
 
-namespace DigiStore24;
+namespace Kazin8\DigiStore24;
 
 class DigiStoreApiException extends \Exception
 {
