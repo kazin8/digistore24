@@ -66,7 +66,7 @@ class DigiStoreApi {
     * See api reference at https://doc.digistore24.com/api-en/
     *
     * @param string $api_key Your api key from you Digistore24 account, e.g. 123-iKWIrTsUTbCyrFuotOdV8yO20nfMI5bbrZhDCUAG
-    * @throws DigistoreApiException
+    * @throws DigiStoreApiException
     */
     public static function connect( $api_key )
     {
@@ -139,7 +139,7 @@ class DigiStoreApi {
     *
     * @param string $function_name
     * @param array $arguments
-    * @throws DigistoreApiException
+    * @throws DigiStoreApiException
     */
     public function __call( $function_name, $arguments )
     {
@@ -342,7 +342,7 @@ class DigiStoreApi {
                 case 'error':
                     $msg  = $result->message;
                     $code = $result->code;
-                    throw new DigistoreApiException( $msg, $code );
+                    throw new DigiStoreApiException( $msg, $code );
 
                 case 'success':
                     $data = $result->data;
